@@ -1,0 +1,55 @@
+<!Author - 			      Shivastuti Koul
+  Creation Date - 	      07/23/2015
+  Last Modification Date -  07/24/2015
+  Description - 			Javascript file for Page Acronym 							Search
+->
+
+<!DOCTYPE html>
+<!--<script runat="server">-->
+<!--</script>-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-Declaring head-->
+
+<head id="Head1" runat="server">
+<title>Acronym Search</title>
+<!-Including jQuery,protoype and acronym.js-->
+<script
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="http://code.jquery.com/jquery-1.10.1.js">  
+</script>
+<script>jQuery.noConflict();</script>  
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"> 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>  
+<script type="text/javascript" src="acronymJs.js"></script>       
+</head>
+
+<body class="wrapper">
+<div class="padding" id="pageTop">
+<h1>Acronym Search</h1>
+<hr />
+<p>Please enter an acronym and the number of results expected
+</p>
+<hr/>
+<div>
+Acronym:
+	<input alt="Enter an acronym" type= "text" id="search_string"/>
+	<br/><br />
+	Number of Acronyms:
+	<input alt="Enter a number" id="maxItems" /><br /><br />
+	<button id="buttonFetch">SEARCH</button>
+	<button id="reset">RESET</button>
+
+</div>
+<br />
+<div id="divResponse">
+<h3>RESULT</h3>
+<label id="errormessage"></label><br />
+<label id="count"></label><br /><br /><br />
+<label id="lbllongForm"></label><br />
+</div>
+</div>    
+</body>
+</html>
